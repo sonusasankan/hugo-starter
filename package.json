@@ -1,1 +1,17 @@
 {
+    "name": "hugo-starter",
+    "version": "0.0.1",
+    "private": true,
+    "author": "Hugo Minimal Doc",
+    "scripts": {
+      "add-theme": "git submodule add git@bitbucket.org:zetaengg/zeta-docs-theme.git themes/zeta-docs-theme",
+      "add-theme-force": "git submodule add --force git@bitbucket.org:zetaengg/zeta-docs-theme.git themes/zeta-docs-theme",
+      "build": "hugo",
+      "fetch-theme": "git submodule update --init --recursive --remote",
+      "start": "hugo server --port 1313",
+      "start-drafts": "hugo server --buildDrafts --buildFuture --port 1313"
+    },
+    "devDependencies": {
+      "hugo-extended": "^0.97.3"
+    }
+  }
